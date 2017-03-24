@@ -93,13 +93,15 @@
     <None Include="project.json" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddUsing\MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="MainPage.xaml.cs">
+    <Compile Include="Bind\MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Models\ColorEntry.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ViewModels\MainViewModel.cs" />
   </ItemGroup>
@@ -124,15 +126,11 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="DeviceFamily-Tablet\MainPage.xaml">
-      <Generator>MSBuild:Compile</Generator>
+    <Page Include="AddUsing\MainPage.xaml">
       <SubType>Designer</SubType>
-    </Page>
-    <Page Include="DeviceFamily-Xbox\MainPage.xaml">
       <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
     </Page>
-    <Page Include="MainPage.xaml">
+    <Page Include="Bind\MainPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -141,6 +139,10 @@
     <ProjectReference Include="..\UwpMorePowerful.Controls\UwpMorePowerful.Controls.csproj">
       <Project>{0995e07b-a3f0-4a5c-8108-20b7c11def36}</Project>
       <Name>UwpMorePowerful.Controls</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UwpMorePowerfulWithVS2017.PortableViewModels\UwpMorePowerfulWithVS2017.PortableViewModels.csproj">
+      <Project>{b3ab6a1c-da00-47fb-8b7e-ebe36e1e7c58}</Project>
+      <Name>UwpMorePowerfulWithVS2017.PortableViewModels</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup />

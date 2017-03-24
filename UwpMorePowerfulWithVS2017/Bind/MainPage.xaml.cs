@@ -2,7 +2,7 @@
 using UwpMorePowerfulWithVS2017.ViewModels;
 using Windows.UI.Xaml.Controls;
 
-namespace UwpMorePowerfulWithVS2017
+namespace UwpMorePowerfulWithVS2017.Bind
 {
     public sealed partial class MainPage : Page
     {
